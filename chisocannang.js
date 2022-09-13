@@ -1,0 +1,17 @@
+function clickButton(){
+    let weight = document.getElementById('weight').value;
+    let height = document.getElementById('height').value;
+    let bmi = weight / Math.pow(height, 2);
+    let result = null;
+     if (bmi < 18){
+         result = 'Underweight';
+     }else if (bmi < 25){
+         result = 'Normal';
+     }else if (bmi < 30){
+         result = 'Overweight';
+     }else{
+         result = 'Obese';
+     }
+     document.getElementById('result').innerHTML = 'BMI: ' + bmi + '<br>' + 'You are ' + result;
+}
+
