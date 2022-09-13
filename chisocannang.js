@@ -1,6 +1,6 @@
 function clickButton(){
-    let weight = document.getElementById('weight').value;
-    let height = document.getElementById('height').value;
+    let weight = Number(document.getElementById('weight').value);
+    let height = Number(document.getElementById('height').value);
     let bmi = weight / Math.pow(height, 2);
     let result = null;
      if (bmi < 18.5){
